@@ -1,0 +1,6 @@
+*.env
+*.log
+*.jenkins_home/
+*.docker-compose.yml
+*.Dockerfile
+

@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  jenkins:
+    build: .
+    container_name: jenkins-marvin
+    ports:
+      - "8080:8080"
+      - "50000:50000"
+    volumes:
+      - ./my_marvin.yml:/var/jenkins_home/casc_configs/my_marvin.yml
+      - ./job_dsl.groovy:/var/jenkins_home/job_dsl.groovy
+      - jenkins_home:/var/jenkins_home
+
+
+volumes:
+  jenkins_home:
+        
