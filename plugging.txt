@@ -7,4 +7,4 @@ job-dsl
 script-security
 structs
 role-strategy
-ws-cleanupw
+ws-cleanup
